@@ -116,6 +116,12 @@ public class CodeDeployStep extends Step {
         protected final transient CodeDeployStep step;
         protected final transient AmazonCodeDeploy client;
 
+        /**
+         * Execution constructor
+         *
+         * @param step
+         * @param context
+         */
         public Execution(CodeDeployStep step, StepContext context) {
             super(context);
             this.step = step;
@@ -124,7 +130,6 @@ public class CodeDeployStep extends Step {
 
         /**
          *
-         * @return
          * @throws Exception
          */
         @Override
